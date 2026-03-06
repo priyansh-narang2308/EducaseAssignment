@@ -8,5 +8,12 @@ export const productApii = {
             params: { limit, skip }
         })
         return resp.data
+    },
+
+    searchhProductss: async (query: string): Promise<ProductResponse> => {
+        const res = await apiClienttt.get<ProductResponse>("/products/search", {
+            params: { q: query }
+        })
+        return res.data
     }
 }
