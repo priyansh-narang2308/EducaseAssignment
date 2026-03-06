@@ -22,7 +22,7 @@ export interface ProductResponse {
 export interface ProductState {
     items: Product[]
     selectedProduct: Product | null
-    loading: Boolean
+    loading: boolean
     error: string | null
     total: number
     skip: number
