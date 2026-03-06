@@ -15,5 +15,10 @@ export const productApii = {
             params: { q: query }
         })
         return res.data
+    },
+
+    fetchProdiuctsById: async (id: number): Promise<any> => {
+        const resp = await apiClienttt.get(`/products/${id}`)
+        return resp.data
     }
 }
