@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from './src/store/store';
 import { useAppStatePersistence } from './src/hooks/useAppStatePersistence';
+import AppNavigator from './src/navigation/AppNavigator';
 
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <SafeAreaProvider>
-          {/* <AppNavigator /> */}
+          <AppNavigator />
         </SafeAreaProvider>
       </PersistGate>
     </Provider>

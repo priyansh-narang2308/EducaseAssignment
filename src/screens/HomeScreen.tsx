@@ -106,7 +106,6 @@ const HomeScreen: React.FC = () => {
                     items.length === 0 ? styles.flex1 : null
                 ]}
                 showsVerticalScrollIndicator={false}
-                // Performance optimizations
                 initialNumToRender={10}
                 maxToRenderPerBatch={10}
                 windowSize={5}
@@ -119,7 +118,7 @@ const HomeScreen: React.FC = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F2F2F7', // iOS grouped background color
+        backgroundColor: '#F2F2F7',
     },
     header: {
         paddingHorizontal: 20,
